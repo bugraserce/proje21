@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+
+	<style>
+
+		*{margin: 0; padding: 0;}
+
+		body {
+			background-image: url(./bg-body.jpg);
+
+		}
+
+
+		header{
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		nav {width: 700px; margin: 0 auto;}
+
+		nav ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: space-around;
+			margin-top: 40px;
+
+
+		}
+
+		nav ul li {
+
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+			padding: 10px;
+			padding-top: 30px;
+
+		}
+
+		nav ul li:nth-of-type(2) {
+
+			background-image: url(./bg-menu-selected.jpg);
+		}
+
+		nav ul li:hover {
+
+			cursor: pointer;
+			color: orange;
+
+		}
+
+		article {
+			background-image: url(./bg-content.jpg) ;
+		}
+
+		section {
+			width: 700px;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			text-align: center;
+			padding: 60px;
+		
+
+
+		}
+
+		.breadbox img {
+
+				width: 200px;
+				border: 1px solid white;			
+
+		}
+
+		.breadbox h2 {
+
+				font-family: Arial, Helvetica, sans-serif;
+				color: white;
+		}
+
+		.breadbox h3 {
+			color: blue;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.breadbox img:hover {
+
+			
+
+
+		}
+
+
+	</style>
+
+
+
+
+</head>
+<body>
+
+
+<header>
+	<img src="./logo.png" alt="">
+
+</header>
+
+	
+<nav>
+		<ul>
+				<li>HOME</li>
+				<li>ABOUT</li>
+				<li>BLOG</li>
+				<li>MENU</li>
+				<li>CONTACT</li>
+
+		</ul>
+
+
+
+
+</nav>
+
+
+	<article>
+
+				<section>
+
+							<div class="breadbox">
+
+								<div>
+									<img src="./traditional.jpg" title="traditional">
+								</div>
+
+								<h2>Traditional</h2>
+								<h3>10.99$</h3>
+
+
+							</div>
+
+							<div class="breadbox">
+
+								<div>
+									<img src="./collection.jpg" title="favorites">
+								</div>
+
+								<h2>Collection</h2>
+								<h3>6.99$</h3>
+
+							</div>
+
+
+							<div class="breadbox">
+
+								<div>
+									<img src="./favorites.jpg" title="favorites">
+								</div>
+								<h2> Favorites	</h2>
+								<h3> 8.99$	</h3>
+
+							</div>
+
+
+
+				</section>
+
+
+
+
+
+
+	</article>
+
+
+
+
+
+
+
+</body>
+</html>

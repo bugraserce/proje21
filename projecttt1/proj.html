@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+    /* CSS Reset for all margins and padddings */
+* { margin:0 ; padding:0;}
+
+body {
+    background-image: url(./img/bg-body.jpg) ;
+    font-family: arial ;
+    color: #FFF ;
+}
+header { text-align: center; margin-top: 30px;}
+
+nav { width: 700px; margin: 0 auto ;}
+nav ul {
+   list-style-type: none;
+   display: flex ;
+   justify-content: space-between;
+   margin-top: 30px;
+}
+nav ul li {
+   font-size: 24px;
+   /* border: 1px solid white ; */
+   padding: 10px;
+   padding-top: 30px;
+}
+
+nav ul li:hover {
+   color: #9f5b34;
+   cursor:pointer ;
+}
+
+nav ul li:nth-of-type(2) { background-image: url(./img/bg-menu-selected.jpg)}
+
+article {
+   background-image: url(./img/bg-content.jpg) ;
+}
+
+section {
+   width: 700px;
+   margin: 0 auto ;
+   display: flex ;
+   justify-content: space-between;
+   padding: 60px 0 ;
+   text-align: center;
+}
+.breadBox img {
+   width: 200px;
+   border: 3px solid #DDD;
+   vertical-align: bottom;
+}
+
+.breadBox h3 { 
+   margin: 10px;
+   font-size: 1.8em ;
+   font-weight: normal ;
+}
+
+.breadBox h4 {
+   color: rgb(24, 12,138) ;
+   font-size: 1.5em ;
+}
+
+footer {
+   width: 700px;
+   margin:0 auto;
+   display: flex ;
+}
+footer > div { box-sizing: border-box; }
+footer .col1 { 
+   width: 40%; 
+   background-color: rgba(0,0,0, 0.3) ; 
+   font-size:40px;
+   height: 250px;  
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+footer .col2 { 
+   width: 60%;
+   display: flex ;
+   flex-direction: column ;
+   justify-content: center;
+   align-items: center;
+}
+.col2 img {
+   width: 30%; 
+   border-radius: 50%;
+}
+.col2 h3 {
+   margin-top: 20px;
+}
+
+.breadBox > div { position: relative ; }
+.breadBox .overlay {
+   width: 0;
+   background: black ;
+   height: 100%;
+   position: absolute ;
+   top:0;
+   left:0;
+   opacity: 0.5 ;
+   z-index: 1 ;
+   transition: all ease 1s;
+}
+
+.breadBox > div:hover .overlay {
+   width: 100%;
+
+}
+
+@media (max-width: 700px) {
+    nav , footer { display: none ;}
+    header { padding-bottom: 30px;}
+    header img { width: 70%;}
+    section { flex-direction: column; width: 100%;}
+    .breadBox { margin-bottom: 30px; }
+    .breadBox img { width: 50%; }
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" >
+    </header>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>BLOG</li>
+            <li>MENU</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+
+    <article>
+        <section>
+             <div class="breadBox">
+                 <div>
+                     <div class="overlay"></div>
+                     <img src="./img/traditional.jpg" >
+                 </div>
+                 <h3>Traditional</h3>
+                 <h4>10,99$</h4>
+             </div>
+
+             <div class="breadBox">
+                <div>
+                    <div class="overlay"></div>
+                    <img src="./img/collection.jpg" >
+                </div>
+                <h3>Collection</h3>
+                <h4>6,99$</h4>
+            </div>
+
+            <div class="breadBox">
+                <div>
+                    <div class="overlay"></div>
+                    <img src="./img/favorites.jpg" >
+                </div>
+                <h3>Favorites</h3>
+                <h4>8,99$</h4>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <div class="col1">CONTACT</div>
+        <div class="col2">
+            <img src="./img/contact.jpg" >
+            <h3>Julia Troll</h3>
+        </div>
+    </footer>
+</body>
+</html>
